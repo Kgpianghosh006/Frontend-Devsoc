@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "company": "Tech Company",
+      "location": "New York, NY",
+      "type": "Full-time",
+      "description": "Develop and maintain web applications."
+    },
+    {
+      "id": 2,
+      "title": "Product Manager",
+      "company": "Business Inc.",
+      "location": "San Francisco, CA",
+      "type": "Part-time",
+      "description": "Manage product development and strategy."
+    }
+  ]
