@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import JobList from './JobList';
-import SearchBar from './SearchBar';
-import FilterButtons from './FilterButtons';
-import Pagination from './Pagination';
-import JobModal from './JobModal';
-import dummyData from './jobs.json';
+import './index.css'; // Ensure you have this file for custom styles
+import HeroSection from './components/HeroSection';
+import JobList from './components/JobList';
+import SearchBar from './components/SearchBar';
+import FilterButtons from './components/FilterButtons';
+import Pagination from './components/Pagination';
+import JobModal from './components/JobModal';
+import dummyData from './data/jobs.json';
 
 const App = () => {
   const [jobs, setJobs] = useState([]);
-  const [search, setSearch] = useState('');
+  const [searchTitle, setSearchTitle] = useState('');
+  const [searchLocation, setSearchLocation] = useState('');
   const [filter, setFilter] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedJob, setSelectedJob] = useState(null);
@@ -23,7 +26,8 @@ const App = () => {
   }, []);
 
   const filteredJobs = jobs
-    .filter(job => job.title.includes(search) || job.location.includes(search))
+    .filter(job => job.title.toLowerCase().includes(searchTitle.toLowerCase()))
+    .filter(job => job.location.toLowerCase().includes(searchLocation.toLowerCase()))
     .filter(job => (filter ? job.type === filter : true));
 
   const jobsPerPage = 10;
@@ -32,12 +36,18 @@ const App = () => {
 
   return (
     <div className="app">
-      <SearchBar search={search} setSearch={setSearch} />
+      <HeroSection />
+      <SearchBar
+        searchTitle={searchTitle}
+        setSearchTitle={setSearchTitle}
+        searchLocation={searchLocation}
+        setSearchLocation={setSearchLocation}
+      />
       <FilterButtons filter={filter} setFilter={setFilter} />
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <JobList jobs={displayedJobs} />
+        <JobList jobs={displayedJobs} onClick={setSelectedJob} />
       )}
       <Pagination currentPage={currentPage} totalPages={totalPages} setPage={setCurrentPage} />
       <JobModal job={selectedJob} onClose={() => setSelectedJob(null)} />
