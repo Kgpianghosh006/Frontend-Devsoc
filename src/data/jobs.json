@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Software Engineer",
+    "company": "Tech Company",
+    "location": "New York, NY",
+    "type": "Full-time",
+    "description": "Develop and maintain web applications."
+  },
+  {
+    "id": 2,
+    "title": "Product Manager",
+    "company": "Business Inc.",
+    "location": "San Francisco, CA",
+    "type": "Part-time",
+    "description": "Manage product development and strategy."
+  },
+  {
+    "id": 3,
+    "title": "Data Scientist",
+    "company": "Data Co.",
+    "location": "Seattle, WA",
+    "type": "Full-time",
+    "description": "Analyze and interpret complex data sets."
+  },
+  {
+    "id": 4,
+    "title": "UX Designer",
+    "company": "Design Firm",
+    "location": "Los Angeles, CA",
+    "type": "Full-time",
+    "description": "Design user interfaces and experiences."
+  },
+  {
+    "id": 5,
+    "title": "Marketing Specialist",
+    "company": "Marketing Co.",
+    "location": "Chicago, IL",
+    "type": "Part-time",
+    "description": "Develop and implement marketing strategies."
+  },  
+  {
+    "id": 6,
+    "title": "Software Engineer",
+    "company": "Tech Company",
+    "location": "New York, NY",
+    "type": "Full-time",
+    "description": "Develop and maintain web applications."
+  },
+  {
+    "id": 7,
+    "title": "Product Manager",
+    "company": "Business Inc.",
+    "location": "San Francisco, CA",
+    "type": "Part-time",
+    "description": "Manage product development and strategy."
+  },
+  {
+    "id": 8,
+    "title": "Data Scientist",
+    "company": "Data Co.",
+    "location": "Seattle, WA",
+    "type": "Full-time",
+    "description": "Analyze and interpret complex data sets."
+  },
+  {
+    "id": 9,
+    "title": "UX Designer",
+    "company": "Design Firm",
+    "location": "Los Angeles, CA",
+    "type": "Full-time",
+    "description": "Design user interfaces and experiences."
+  },
+  {
+    "id": 10,
+    "title": "Marketing Specialist",
+    "company": "Marketing Co.",
+    "location": "Chicago, IL",
+    "type": "Part-time",
+    "description": "Develop and implement marketing strategies."
+  },
+  {
+    "id": 11,
+    "title": "Software Engineer",
+    "company": "Tech Company",
+    "location": "New York, NY",
+    "type": "Full-time",
+    "description": "Develop and maintain web applications."
+  },
+  {
+    "id": 12,
+    "title": "Product Manager",
+    "company": "Business Inc.",
+    "location": "San Francisco, CA",
+    "type": "Part-time",
+    "description": "Manage product development and strategy."
+  },
+  {
+    "id": 13,
+    "title": "Data Scientist",
+    "company": "Data Co.",
+    "location": "Seattle, WA",
+    "type": "Full-time",
+    "description": "Analyze and interpret complex data sets."
+  },
+  {
+    "id": 14,
+    "title": "UX Designer",
+    "company": "Design Firm",
+    "location": "Los Angeles, CA",
+    "type": "Full-time",
+    "description": "Design user interfaces and experiences."
+  },
+  {
+    "id": 15,
+    "title": "Marketing Specialist",
+    "company": "Marketing Co.",
+    "location": "Chicago, IL",
+    "type": "Part-time",
+    "description": "Develop and implement marketing strategies."
+  }
+]
